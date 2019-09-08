@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Coffeemind</string>
+    <string name="address">1907 10th Ave W, Seattle, WA</string>
+    <string name="phone">(206) 717 2147</string>
+    <string name="web">www.thecoffeemind.com</string>
+    <string name="hours">Open everyday 7am - 5pm</string>
+    <string name="email">E-mail: info@thecoffeemind.com</string>
+    <string name="eat_drink_shop">Eat. Drink. Shop.</string>
+</resources>

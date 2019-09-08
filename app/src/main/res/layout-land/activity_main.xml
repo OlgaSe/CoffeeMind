@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.coffeemind.MainActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFC107" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/logo_image_view"
+        android:background="#212121" />
+
+
+    <ImageView
+        android:id="@+id/logo_image_view"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/coffeemind_logo" />
+
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/logo_image_view"
+        android:autoLink="map"
+        android:background="#212121"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="4dp"
+        android:text="@string/address"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address"
+        android:layout_toRightOf="@id/logo_image_view"
+        android:autoLink="phone"
+        android:background="#212121"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="4dp"
+        android:text="@string/phone"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/website"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone"
+        android:layout_toRightOf="@id/logo_image_view"
+        android:autoLink="web"
+        android:background="#212121"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="4dp"
+        android:text="@string/web"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/hours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/website"
+        android:layout_toRightOf="@id/logo_image_view"
+        android:background="#212121"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="4dp"
+        android:text="@string/hours"
+        android:textColor="@android:color/white"
+        android:textColorLink="#FFFFFF"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hours"
+        android:layout_toRightOf="@id/logo_image_view"
+        android:autoLink="email"
+        android:background="#212121"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="4dp"
+        android:text="@string/email"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/drink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/logo_image_view"
+        android:layout_centerHorizontal="true"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="4dp"
+        android:text="@string/eat_drink_shop"
+        android:textColor="@android:color/white"
+        android:textSize="36sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/coffee_image_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:src="@drawable/coffee" />
+
+        <ImageView
+            android:id="@+id/cookie__image_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:src="@drawable/cookies" />
+
+        <ImageView
+            android:id="@+id/scone_image_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:src="@drawable/scone" />
+
+    </LinearLayout>
+
+</RelativeLayout>
